@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(5655394.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.room-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.room-details {
+  margin-top: 10px;
+}
+
+.room-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.room-price {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.room-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: -2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Add a top margin for spacing */
+}
+
+.book-now-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  display: inline-block; /* Change display to inline-block */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-now-button:hover {
+  background-color: #0056b3;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add a gap between the image and the name */
+  color: aliceblue;
+  text-transform: uppercase;
+}
